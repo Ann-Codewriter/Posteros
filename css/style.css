@@ -59,14 +59,14 @@ nav ul li a:hover{
 }
 
 .hero-text{
-    margin: 12rem 0 2rem 5rem;
+    margin: 10rem 0 2rem 5rem;
     max-width: 26rem;
 }
 
 .hero-text h1{
     font-weight: 800;
     font-size: 2.8rem;
-    line-height: 3.5rem;
+    line-height: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -100,4 +100,72 @@ nav ul li a:hover{
     padding: 0.7rem 2.2rem 0.7rem 2.2rem;
     border: 0.1rem solid #00A0C1;
     border-radius: 3rem; 
+}
+
+.form-heading{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.form{
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    background-color: white;
+    max-width: 70rem;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    line-height: 2.5rem;
+    box-shadow: none;
+}
+
+.form-label{
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.input-field{
+    width: 15rem;
+    outline: none;
+    box-sizing: border-box;
+    border: 0.01rem solid rgb(161, 153, 153);
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+    margin: 0 1rem 0.4rem 0;
+}
+
+select{
+    font-weight: 600;
+    color: #BDBDBD;
+}
+
+select option{
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+input::placeholder{
+    font-weight: 600;
+    opacity: 0.8;
+    color: #BDBDBD
+}
+
+.form-label::after{
+    content: "*";
+    color: red;
+    margin: 0.2rem;
+}
+
+.form-btn{
+    display: block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #FFA62B;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 0.5rem;
 }

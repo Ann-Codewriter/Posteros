@@ -32,33 +32,34 @@
         </div>
 
         <section>
-        <div>
-            <h3>Join the coding Train</h3>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Full Name" tabindex="1" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" tabindex="2" required>
-                <label for="department">Department</label>
-                <select id="department" name="department">
+        <div class="form">
+            <h3 class="form-heading">Join the coding Train</h3>
+            <form class="hero-form">
+                <label class="form-label" for="name">Name</label>
+                <input class="input-field" type="text" id="name" name="name" placeholder="Full Name" tabindex="1" required>
+                <label class="form-label" for="email">Email</label>
+                <input class="input-field" type="email" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+                <div>
+                <label class="form-label" for="department">Department</label>
+                <select class="input-field" id="department" name="department">
                     <option value="" disabled selected>Choose Department</option>
                     <option value="administration">Administration</option>
                     <option value="finance">Finance</option>
                     <option value="human resource">Human Resource</option>
                 </select>
 
-                <label for="time">Time</label>
-                <select id="time" name="time">
+                <label class="form-label" for="time">Time</label>
+                <select class="input-field" id="time" name="time">
                     <option value="" disabled selected>Choose Option</option>
-                    <option value="administration">9:00 Available</option>
-                    <option value="finance">10:00 Available</option>
-                    <option value="human resource">11:00 Available</option>
+                    <option value="9:00 Available">9:00 Available</option>
+                    <option value="10:00 Available">10:00 Available</option>
+                    <option value="11:00 Available">11:00 Available</option>
                 </select>
+                </div>
+            <a class="form-btn" href="#">
+                Book Appointment
+            </a>
             </form>
-        </div>
-
-        <div class="form-btn">
-            <a href="#">Book Appointment</a>
         </div>
         </section>
       </header>
