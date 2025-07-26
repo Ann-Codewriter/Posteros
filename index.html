@@ -11,21 +11,31 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <header class="hero-section">
+    <header>
+    <div class="topnav"></div>
+      <logo class="logo">Posteros</logo>
       <nav>
-        <logo class="logo" href="#home"> POSTEROS </logo>
-
+        <div class="menulinks">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <button class="button" href="#joinus">Join Us</button>
+          <li><a href="#">Gallery</a></li>
         </ul>
+        <button class="nav-btn">Join Us</button>
+      </div>
+
+    <!-- "Hamburger menu"to toggle navigation links-->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
       </nav>
 
+      <section>
       <div class="hero-text">
         <h1>Next Generation Coders Platform For Digital</h1>
         <p>
@@ -35,6 +45,7 @@
         <a class="join-us" href="">Join Us</a>
         <a class="learn-more" href="">Learn More</a>
       </div>
+      </section>
 
       <div class="form">
         <h3 class="form-heading">Join the coding Train</h3>
@@ -75,10 +86,21 @@
               <option value="10:00 Available">10:00 Available</option>
               <option value="11:00 Available">11:00 Available</option>
             </select>
-          </div>
+
           <a class="form-btn" href="#"> Book Appointment </a>
         </form>
       </div>
     </header>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("menulinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -6,64 +6,64 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.hero-section {
+body{
   width: 100%;
   height: 100vh;
   background: #d9edff;
 }
 
-nav {
-  width: 95rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem 8rem;
+nav{
+  font-size: 1.15rem;
+  margin: 2rem;
 }
 
-.logo {
-  color: #ffa62b;
+.nav-btn{
+  border: none;
+  background-color: #ffa62b;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  font-size: 1.3rem;
+  border-radius: 0.6rem;
+  display: flex;
+  float: inline-end;
+  margin: -2rem 6rem 0 0;
 }
 
-nav ul li {
-  display: inline-block;
-  list-style-type: none;
-  font-size: 1.1rem;
-  margin: 0.6rem 1.2rem;
+.nav-btn:hover{
+  cursor: pointer;
+  background-color: #ffdcaf;
 }
 
-nav ul li a {
+.logo{
+  position: absolute;
+  top: 2rem;
+  left: 5.9rem;
+  color: #ffa62b;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.5rem;
   text-decoration: none;
+}
+
+nav ul{
+  width: 85%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a{
+  height: 100rem;
+  padding: 0 1.5rem;
+  text-decoration: none;
+  align-items: center;
   color: black;
 }
 
-nav ul li a:hover {
-  color: #ffa62b;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.button {
-  color: white;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border: none;
-  background-color: #ffa62b;
-  padding: 0.6rem 1.2rem;
-  text-align: center;
-  border-radius: 0.4rem;
-  margin-left: 1rem;
-}
-
-.button:hover {
-  background-color: #ffdcaf;
-  cursor: pointer;
-}
-
 .hero-text {
-  margin: 8rem 0 2rem 8rem;
+  margin: 10rem 0 2rem 6rem;
   max-width: 26rem;
 }
 
@@ -76,7 +76,7 @@ nav ul li a:hover {
 
 .hero-text p {
   font-size: 1rem;
-  margin: 1.3rem 0 2.3rem 0;
+  margin: 1.3rem 0 2.5rem 0;
   line-height: 1.5rem;
   text-transform: capitalize;
 }
@@ -109,7 +109,7 @@ nav ul li a:hover {
   text-decoration: none;
   font-size: 1.2rem;
   background-color: #d9edff;
-  padding: 0.7rem 2.2rem 0.7rem 2.2rem;
+  padding: 0.7rem 2.3rem 0.7rem 2.3rem;
   border: 0.1rem solid #00a0c1;
   border-radius: 3rem;
 }
@@ -131,8 +131,10 @@ nav ul li a:hover {
 
 .form {
   position: absolute;
-  top: 10rem;
-  right: 9rem;
+  display: flex;
+  flex-direction: column;
+  top: 8rem;
+  right: 10rem;
   background-color: white;
   max-width: 70rem;
   padding: 2.3rem;
@@ -197,5 +199,82 @@ input::placeholder {
   margin: 0.2rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px){
+.menulinks{
+  display: none;
+}
+
+.topnav a{
+  color: white;
+  display: block;
+  position: relative;
+}
+
+.topnav a.icon{
+  background: black;
+  display: flex;
+  position: relative;
+}
+
+.logo{
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+}
+
+.hero-section {
+  width: 100%;
+  height: 150vh;
+}
+
+.form {
+  top: 40rem;
+  right: 0;
+  align-items: center;
+  max-width: 33rem;
+  padding: 2rem;
+  margin-right: 2rem;
+}
+
+.form-btn {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.hero-text {
+  margin: 7rem 0;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-weight: 700;
+  max-width: 23.5rem;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  padding-left: 2rem;
+  max-width: 22rem;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+.join-us {
+  display: block;
+  margin: 0 6rem;
+  padding: 1rem;
+}
+
+.learn-more {
+  display: block;
+  margin: 2rem 6rem 3rem 6rem;
+  position: relative;
+  padding: 1rem;
+}
+
 }
