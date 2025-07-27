@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: #d9edff;
+}
+
+nav{
+  font-size: 1.15rem;
+  margin: 2rem;
+}
+
+.nav-btn{
+  border: none;
+  background-color: #ffa62b;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 0.6rem;
+  display: flex;
+  float: inline-end;
+  margin: -2rem 6rem 0 0;
+}
+
+.nav-btn:hover{
+  cursor: pointer;
+  background-color: #ffdcaf;
+}
+
+.logo{
+  position: absolute;
+  top: 2rem;
+  left: 5.9rem;
+  color: #ffa62b;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+nav ul{
+  width: 85%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a{
+  height: 100rem;
+  padding: 0 1.5rem;
+  text-decoration: none;
+  align-items: center;
+  color: black;
+}
+
+.hero-text {
+  margin: 10rem 0 2rem 6rem;
+  max-width: 26rem;
+}
+
+.hero-text h1 {
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin: 1.3rem 0 2.5rem 0;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+}
+
+.join-us {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: #00a0c1;
+  padding: 0.7rem 3rem 0.7rem 3rem;
+  border-radius: 3rem;
+  margin-right: 1.5rem;
+}
+
+.join-us:hover{
+  background-color: #d9edff;
+  font-weight: 400;
+  color: #00a0c1;
+  border: 0.1rem solid #00a0c1;
+  cursor: pointer;
+}
+
+.learn-more {
+  display: inline-block;
+  color: #00a0c1;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: #d9edff;
+  padding: 0.7rem 2.3rem 0.7rem 2.3rem;
+  border: 0.1rem solid #00a0c1;
+  border-radius: 3rem;
+}
+
+.learn-more:hover{
+  text-align: center;
+  color: #d9edff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: #00a0c1;
+  border-radius: 3rem;
+}
+
+.form-heading {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 8rem;
+  right: 10rem;
+  background-color: white;
+  max-width: 70rem;
+  padding: 2.3rem;
+  border-radius: 1.2rem;
+  line-height: 2.5rem;
+  box-shadow: none;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form-btn {
+  display: block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #ffa62b;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  border-radius: 0.5rem;
+}
+
+.form-btn:hover{
+  cursor: pointer;
+  background-color: #ffdcaf;
+}
+
+.input-field {
+  width: 15rem;
+  outline: none;
+  box-sizing: border-box;
+  border: 0.01rem solid rgb(161, 153, 153);
+  border-radius: 0.3rem;
+  padding: 0.7rem;
+  margin: 0 1rem 0.4rem 0;
+}
+
+select {
+  font-weight: 600;
+  color: #bdbdbd;
+}
+
+select option {
+  color: rgb(0, 0, 0);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+input::placeholder {
+  font-weight: 600;
+  opacity: 0.8;
+  color: #bdbdbd;
+}
+
+.form-label::after {
+  content: "*";
+  color: red;
+  margin: 0.2rem;
+}
+
+.menubars{
+  display: none;
+}
+
+@media (max-width: 600px){
+body{
+  height: 140vh;
+}
+
+.logo{
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+}
+
+nav{
+  display: none;
+}
+
+.menubars{
+  display: block;
+  align-self: flex-start;
+  margin: 5.1rem 0 0 20rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.form {
+  top: 40rem;
+  right: 0;
+  align-items: center;
+  max-width: 33rem;
+  padding: 2rem;
+  margin-right: 2rem;
+}
+
+.form-btn {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.hero-text {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-weight: 700;
+  max-width: 23.5rem;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  padding-left: 2rem;
+  max-width: 22rem;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+.join-us {
+  display: block;
+  margin: 0 6rem;
+  padding: 1rem;
+}
+
+.learn-more {
+  display: block;
+  margin: 2rem 6rem 3rem 6rem;
+  position: relative;
+  padding: 1rem;
+}
+
+}

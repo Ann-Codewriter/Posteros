@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Posteros | Homepage</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <logo class="logo">Posteros</logo>
+      <label for="menu-toggle" class="menubars">&#9776</label>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+        <button class="nav-btn">Join Us</button>
+      </nav>
+
+      <section>
+      <div class="hero-text">
+        <h1>Next Generation Coders Platform For Digital</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Massa laoreet velit ligula
+          metus at pulvinar morbi.
+        </p>
+        <a class="join-us" href="">Join Us</a>
+        <a class="learn-more" href="">Learn More</a>
+      </div>
+      </section>
+
+      <div class="form">
+        <h3 class="form-heading">Join the coding Train</h3>
+        <form class="hero-form">
+          <label class="form-label" for="name">Name</label>
+          <input
+            class="input-field"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+            tabindex="1"
+            required
+          />
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="input-field"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            tabindex="2"
+            required
+          />
+          <div>
+            <label class="form-label" for="department">Department</label>
+            <select class="input-field" id="department" name="department">
+              <option value="" disabled selected>Choose Department</option>
+              <option value="administration">Administration</option>
+              <option value="finance">Finance</option>
+              <option value="human resource">Human Resource</option>
+            </select>
+
+            <label class="form-label" for="time">Time</label>
+            <select class="input-field" id="time" name="time">
+              <option value="" disabled selected>Choose Option</option>
+              <option value="9:00 Available">9:00 Available</option>
+              <option value="10:00 Available">10:00 Available</option>
+              <option value="11:00 Available">11:00 Available</option>
+            </select>
+
+          <a class="form-btn" href="#"> Book Appointment </a>
+        </form>
+      </div>
+    </header>
+  </body>
 </html>
