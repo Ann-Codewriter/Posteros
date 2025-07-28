@@ -206,25 +206,30 @@ input::placeholder {
 }
 
 .services-heading{
-  margin: 8rem 0 0 0;
-  text-align: center;
   font-size: 2rem;
+  text-align: center;
+  margin: 8rem 0 4rem 0;
 }
 
-.subtitle{
+.services{
   display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.subtitle1{
+  margin: 0 6rem 0 6rem;
+  display: flex;
+  position: relative;
+  flex-direction: row;
   width: 25rem;
   background-color: #d9edff; 
-  padding: 2rem 0 5rem;
+  padding: 2rem 0 8rem;
   border-radius: 2rem;
-  margin: 6rem;
 }
 
 .subt1{
-  display: inline-block;
-  position: relative;
-  padding: 2rem 0 0 -19rem;
-  margin-top: 2rem;
+  margin: 1.6rem -1rem;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -232,9 +237,45 @@ input::placeholder {
 .vector{
   background-color: #ffa62b;
   width: 3.7rem;
-  margin: 1rem 2.5rem;
+  margin: 1rem 3rem;
   padding: 1.1rem 0.8rem;
   border-radius: 5rem;
+}
+
+.sublist{
+  position: relative;
+  top: -7rem;
+  margin: 0 6rem 0 6rem;
+  line-height: 2rem;
+  font-size: 1.15rem;
+  background-color:white;
+  width: 25rem;
+  border: 0.1rem solid #00A0C1;
+  border-radius: 2rem;
+  padding: 3rem 3.3rem;
+}
+
+.sublist li{
+  margin-bottom: 1.5rem;
+}
+
+.sublist a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #ffa62b;
+  font-weight: 600;
+}
+
+.visualdesign{
+  position: absolute;
+  display: block;
+  margin-left: 28.5rem;
+}
+
+.webdev{
+  position: absolute;
+  display: block;
+  margin-left: 57.5rem; 
 }
 
 @media (max-width: 600px){
