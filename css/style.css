@@ -6,15 +6,16 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body{
+header{
   width: 100%;
   height: 100vh;
   background: #d9edff;
 }
 
 nav{
+  position: relative;
   font-size: 1.15rem;
-  margin: 2rem;
+  margin: 0;
 }
 
 .nav-btn{
@@ -27,7 +28,7 @@ nav{
   border-radius: 0.6rem;
   display: flex;
   float: inline-end;
-  margin: -2rem 6rem 0 0;
+  margin: -2.3rem 6rem 0 0;
 }
 
 .nav-btn:hover{
@@ -47,6 +48,7 @@ nav{
 }
 
 nav ul{
+  padding-top: 2rem;
   width: 85%;
   list-style: none;
   display: flex;
@@ -134,7 +136,7 @@ nav a{
   display: flex;
   flex-direction: column;
   top: 8rem;
-  right: 10rem;
+  right: 8rem;
   background-color: white;
   max-width: 70rem;
   padding: 2.3rem;
@@ -203,14 +205,48 @@ input::placeholder {
   display: none;
 }
 
+.services-heading{
+  margin: 8rem 0 0 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.subtitle{
+  display: flex;
+  width: 25rem;
+  background-color: #d9edff; 
+  padding: 2rem 0 5rem;
+  border-radius: 2rem;
+  margin: 6rem;
+}
+
+.subt1{
+  display: inline-block;
+  position: relative;
+  padding: 2rem 0 0 -19rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.vector{
+  background-color: #ffa62b;
+  width: 3.7rem;
+  margin: 1rem 2.5rem;
+  padding: 1.1rem 0.8rem;
+  border-radius: 5rem;
+}
+
 @media (max-width: 600px){
-body{
-  height: 140vh;
+header{
+  display: flex;
+  width: 100;
+  height: 150vh;
 }
 
 .logo{
   position: absolute;
-  top: 5rem;
+  top: 6rem;
   left: 2rem;
 }
 
@@ -219,17 +255,13 @@ nav{
 }
 
 .menubars{
-  display: block;
+  display: flex;
+  position: absolute;
   align-self: flex-start;
-  margin: 5.1rem 0 0 20rem;
+  margin: 6rem 0 0 20rem;
   font-size: 1rem;
   font-weight: 600;
   color: black;
-}
-
-.hero-section {
-  width: 100%;
-  height: 100vh;
 }
 
 .form {
@@ -250,7 +282,7 @@ nav{
 }
 
 .hero-text {
-  margin: 5rem 0;
+  margin: 11rem 0;
   text-align: center;
 }
 
@@ -259,7 +291,7 @@ nav{
   max-width: 23.5rem;
   font-size: 2.5rem;
   line-height: 3.5rem;
-  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .hero-text p {
