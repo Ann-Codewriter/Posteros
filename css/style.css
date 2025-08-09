@@ -7,6 +7,7 @@
 
 header {
     background-color: #D9EDFF;
+    padding-bottom: 2.1rem;
 }
 
 .content {
@@ -43,7 +44,7 @@ header {
 .links ul {
     list-style: none;
     display: flex;
-    gap:1.8rem;
+    gap: 1.8rem;
 }
 
 .links a {
@@ -65,7 +66,8 @@ header {
     font-weight: 600;
     font-size: 1.3rem;
     text-transform: capitalize;
-    padding: 0.8rem 1.6rem;
+    padding: 0.8rem 1.8rem;
+    margin-left: 2.6rem;
 }
 
 .nav-btn:hover {
@@ -75,18 +77,24 @@ header {
 
 .herosection {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.herocontent{
+    display: flex;
     flex-direction: column;
-    margin: 16rem 0;
+    gap: 3.3rem;
 }
 
 .herotexts {
-    margin-left: 6.4rem;
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
 }
 
 .herotexts h1 {
+    width: 100%;
     max-width: 26rem;
     font-weight: 800;
     font-size: 3rem;
@@ -96,12 +104,12 @@ header {
 .herotexts p {
     font-weight: 400;
     font-size: 1rem;
+    width: 100%;
     max-width: 28.3rem;
 }
 
-.herobtns {
+.herosectionbtns {
     display: flex;
-    margin: 2rem 6.4rem;
     gap: 1.3rem;
 }
 
@@ -139,5 +147,81 @@ header {
     font-weight: 800;
     color: white;
     background-color: #00A0C1;
+    cursor: pointer;
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 25rem;
+    background-color: white;
+    padding: 2.6rem 2.1rem;
+    margin-top: 5rem;
+    border-radius: 1.2rem;
+    height: 42rem;
+    gap: 1.5rem;
+}
+
+.formgroup h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+
+.formcontent {
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+    width: 100%;
+}
+
+.formtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+input, select {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #BDBDBD;
+    border-radius: 0.5rem;
+    background-color: #FBFBFB;
+    border: 0.1rem solid #BDBDBD;
+    width: 100%;
+    max-width: 20.3rem;
+    padding: 1rem 1.8rem;
+    align-content: center;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+    margin-right: 0.3rem;
+}
+
+.formbtn {
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #FFA62B;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFFFFF;
+    padding: 1rem 4.6rem 1rem;
+    width: 100%;
+}
+
+.formbtn:hover {
+    background-color: #ffe8c7;
     cursor: pointer;
 }
