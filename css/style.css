@@ -235,13 +235,12 @@ input, select {
 
 .services {
     display: flex;
-    gap: 1.6rem;
     justify-content: center;
+    gap: 1.6rem;
 }
 
 .card {
     background-color: #D9EDFF;
-    width: 100%;
     max-width: 21.4rem;
     border-radius: 1.3rem;
 }
@@ -258,7 +257,7 @@ input, select {
 .vector-icon {
     background-color: #FFA62B;
     border-radius: 3.3rem;
-    padding: 1.1rem 0.8rem;
+    padding: 1rem 0.8rem;
 }
 
 .card-heading p {
