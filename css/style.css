@@ -284,3 +284,62 @@ input, select {
     font-weight: 600;
     text-decoration: none;
 }
+
+.how-section {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 28rem;
+}
+
+.how-heading {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.how-subheading {
+    text-transform: lowercase;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 2.13rem;
+}
+
+.how-images {
+    display: flex;
+    background-color: #0B353D;
+    height: 19rem;
+    border-radius: 0 9.4rem;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.youtube-container {
+    position: relative;
+    width: 100%;
+    max-width: 45.2rem;
+    height: 22rem;
+    border-radius: 0 0 3.1rem 3.1rem;
+    overflow: hidden;
+    transform: translateY(-5rem);
+}
+
+.youtube-thumbnail{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.youtube-logo {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    max-width: 7rem;
+    height: 5rem;
+    z-index: 10;
+    transform: translate(50%, -50%);
+}
