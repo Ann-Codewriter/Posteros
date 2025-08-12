@@ -10,12 +10,6 @@ header {
     padding-bottom: 2.1rem;
 }
 
-.content {
-    width: 100%;
-    max-width: 80rem;
-    margin: 0 auto;
-}
-
 .toggle-btn {
     display: none;
 }
@@ -31,7 +25,8 @@ header {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 23rem;
 }
 
 .links {
@@ -136,7 +131,6 @@ header {
 }
 
 .join-us:hover {
-    font-weight: 400;
     color: #00A0C1;
     background-color: transparent;
     border: 0.1rem solid;
@@ -233,10 +227,11 @@ input, select {
     font-size: 1.5rem;
 }
 
-.services {
+.services-cards {
     display: flex;
     justify-content: center;
     gap: 1.6rem;
+    margin-bottom: 7.1rem;
 }
 
 .card {
