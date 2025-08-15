@@ -15,7 +15,7 @@ header {
 }
 
 .logo {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.5rem;
     color: #FFA62B;
     text-transform: uppercase;
@@ -441,10 +441,10 @@ input, select {
 @media (max-width: 25rem) {
 .toggle-btn {
     display: block;
-    align-self: flex-end;
     width: 100%;
     max-width: 1.25rem;
     margin-right: 1.5rem;
+    align-content: center;
 }
 
 .links {
@@ -464,8 +464,6 @@ input, select {
 .logo {
     padding: 0;
     font-weight: 400;
-    font-size: 1.5rem;
-    margin-left: 0;
 }
 
 .logo span {
