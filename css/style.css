@@ -456,7 +456,6 @@ input, select {
     justify-content: space-between;
     gap: 0;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
     max-width: 1280px;
     padding: 1.5rem 0 0 1.2rem;
